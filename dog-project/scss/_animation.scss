@@ -1,0 +1,50 @@
+#head {
+  animation: anime 3s infinite alternate-reverse ease-in-out;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+.content h2 {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.content__card1 {
+  animation: slideIn 1s ease-out 1s;
+  animation-fill-mode: backwards;
+}
+
+.content__card2 {
+  animation: slideIn 1s ease-out 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anime {
+  0% {
+    transform: rotateZ(5deg) translateX(2px);
+  }
+  100% {
+    transform: rotateZ(-5deg) translateX(2px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
