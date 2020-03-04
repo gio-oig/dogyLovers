@@ -47,7 +47,7 @@ body > span {
 
 nav {
   width: 60%;
-  height: 10vh;
+  min-height: 10vh;
   margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,6 +154,19 @@ section .content .content__cards {
 }
 
 section .content .content__cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -179,6 +192,7 @@ section .content .content__cards .card p {
 }
 
 section .content .content__cards .card a {
+  display: inline-block;
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
